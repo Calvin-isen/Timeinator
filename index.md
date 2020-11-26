@@ -1,8 +1,13 @@
 ## Présentation Projet Timeinator
 
-You can use the [editor on GitHub](https://github.com/Calvin-isen/Timeinator/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Nous avons réalisé un réveil virtuel qui offre à un utilisateur différentes fonctionnalités qui peuvent s'avérer très utiles dans la de tous les jours.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Les différents modes proposés sont les suivants : 
+
+  - Un réveil classique avec une heure choisie par l'utilisateur
+  - Un réveil automatisé qui sonnera journalièrement suivant l'heure indiquée par l'utilisateur
+  - Un chronomètre classique qui pourra également stocker 3 temps intermédiaires 
+  - Un compte à rebours 
 
 ## Documentation 
 
