@@ -11,28 +11,35 @@ int main()
 	int choix;
 
 	printf("--- DEBUT ---\n");
-	int pid = fork(); 
+	int pid = fork();
 	
-	if(pid == 0) // Tache fille
+	if(pid == 0) //demarrage du process time_cpt qui compte le nm de sec depuis le lancement du programme.
 	{
 		
+		//lancement du processus à partir d'un autre fichier
 		char *args[] = {"main", NULL, NULL};
 		execv("/home/martin/Documents/Timeinator/process_time_cpt",args);
 		
-	}else{ // Tache mère
-		sleep(2);
-		while(exec){
+
+	}else{ //Tache mère
+		sleep(1); 
+
+		while(exec){//boucle principal;
+
+			//Liste des choix possible
 			printf("1) Eteindre Timeinator\n");
-			scanf("&d", &choix);
+			scanf("%d", &choix);
+
+
 			switch (choix) {
-				case 1 :
+				case 1 ://Fermeture du programme
 					exec=0;
 					break;
 			}
 		}
 
-		kill(pid, SIGUSR1);
-		wait(NULL);
+		kill(pid, SIGUSR1);//Tue process_time_cpt
+		wait(NULL);//Attend la mort de tout les fils;
 	}
 	
 	printf("--- FIN ---\n");
