@@ -37,6 +37,7 @@ int main()
 			printf("compteur pid=%d\n", cptPid);
 			//Liste des choix possible
 			printf("1) Reveil\n");
+			printf("2) Chrono\n");
 			printf("3) Eteindre Timeinator\n");
 
 			scanf("%d", &choix);
@@ -48,12 +49,25 @@ int main()
 					pid[cptPid]=fork();
 
 					if(pid[cptPid] == 0) { 
-						printf("Mon pid est %d\n", getpid());
-						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/martin/Documents/Timeinator/coucou", NULL);
+						printf("Lancement du reveil\n");
+						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/martin/Documents/Timeinator/reveil", NULL);
 						printf("%d\n", cptPid);
 						
 					}
 					break;
+
+				case 2 : //chrono
+				cptPid+=1;	
+				pid[cptPid]=fork();
+
+				if(pid[cptPid] == 0) { 
+					printf("Lancement du chrono\n");
+					execl("/usr/bin/xterm", "xterm","-hold","-e","/home/martin/Documents/Timeinator/chrono", NULL);
+					printf("%d\n", cptPid);
+						
+				}
+				break;
+
 
 				case 3 ://Fermeture du programme
 					exec=0;
