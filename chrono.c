@@ -12,6 +12,12 @@ int min = 0;
 int heure=0;
 int nb = 0;
 
+void interrupt()//Gestion de l'interruption
+{
+	printf("Fermerture du coucou ...\n");
+	exit(0);
+}
+
 int main(void) {
    	 clock_t timer1, timer2;
    	 signal(SIGINT,endChrono);
@@ -20,7 +26,7 @@ int main(void) {
  	printf("Bienvenue dans la partie Chronomètre de votre réveil\n");
  	printf("Appuyez sur ''Entrée'' pour lancer et ''ctr+c'' stopper le Chronomètre\n");
  	getchar();
-
+ 	signal(SIGUSR1,interrupt);
    	 do
 	{
 		system("clear");  //efface screen

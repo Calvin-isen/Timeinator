@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-Le programme a été exécuté 18s.
-=======
-Le programme a été exécuté 112s.
->>>>>>> Stashed changes
+Le programme a été exécuté 32s.

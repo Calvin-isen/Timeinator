@@ -4,25 +4,19 @@
 #include <signal.h>
 #include <time.h>
 
-<<<<<<< Updated upstream
-=======
 void interrupt()//Gestion de l'interruption
 {
 	printf("Fermerture du coucou ...\n");
 	exit(0);
 }
 
->>>>>>> Stashed changes
 int main (void)
 {
 	int h, min;
 	int hr, minr;//heure du reveil
 	int son;
-<<<<<<< Updated upstream
-		
-=======
+
 	signal(SIGUSR1,interrupt);
->>>>>>> Stashed changes
 	printf("Quelle son voulez vous mettre ?\n");
 	printf("son1\n");
 	printf("son2\n");
@@ -51,7 +45,6 @@ int main (void)
  		struct tm *local = localtime(&now);
 		h = local->tm_hour;        
 		min = local->tm_min;
- 		
  		if(h==hr && min==minr)
  		{
  			switch(son)
