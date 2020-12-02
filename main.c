@@ -16,7 +16,7 @@ int main()
 	int exec=1;
 	int choix;
 	pid_t pid[NBMAXPROC];
-	
+	int status = -1;
 	char CMD[15];
 	char spid[10];
 
@@ -72,7 +72,8 @@ int main()
 		{
 			kill(pid[i], SIGUSR1);//Tue process_time_cpt
 		}
-		wait(NULL);//Attend la mort de tout les fils;
+		wait(&status);
+		printf("Message d'erreur : %d\n", status>>8);
 	}
 	
 	printf("--- FIN ---\n");
