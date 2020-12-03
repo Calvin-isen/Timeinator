@@ -14,6 +14,7 @@ Les différents modes proposés sont les suivants :
 
 ### Le Réveil
 
+#### Classique
 
 
 ```markdown
