@@ -1,4 +1,4 @@
-## Présentation Projet Timeinator
+# Présentation Projet Timeinator
 
 Nous avons réalisé un réveil virtuel qui offre à un utilisateur différentes fonctionnalités qui peuvent s'avérer très utiles dans la vie de tous les jours.
 
