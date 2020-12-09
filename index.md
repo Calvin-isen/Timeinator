@@ -50,9 +50,8 @@ Commande à utiliser :
 - Enregistrer un tour : Appuyer sur la touche 'a' de votre clavier puis appuyer sur "Enter"
 
 - Arrêter le chronomètre : Appuyer sur la touche 'z' de votre clavier puis appuyer sur "Enter"
-```markdown
 
-```
+
 
 ## Le Compte à Rebours
 
