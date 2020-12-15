@@ -3,10 +3,12 @@
 #include <stdlib.h>
 #include <signal.h>
 #include <time.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
 void interrupt()//Gestion de l'interruption
 {
-	printf("Fermerture du coucou ...\n");
+	printf("Arrêt du réveil ...\n");
 	exit(0);
 }
 
@@ -16,7 +18,7 @@ int main (void)
 	int hr, minr;//heure du reveil
 	int son;
 
-	signal(SIGUSR1,interrupt);
+	
 	printf("Quelle son voulez vous mettre ?\n");
 	printf("son1\n");
 	printf("son2\n");
@@ -30,13 +32,25 @@ int main (void)
 	
 	printf("Pour quel heure voulez vous programmer votre réveil ?\n");
 	
-	printf("Heure :");
-	scanf("%d",&hr);
+	printf("hh:mm	:");
+	scanf("%d:%d",&hr,&minr);
+	if(minr<0)
+	{
+		minr=00;
+	}
 	
-	printf("Minute :");
-	scanf("%d",&minr); 
 	system("clear");
-	printf("Votre réveil sonnera à %d:%d\n",hr,minr);            
+	if(minr<10)
+	{
+		printf("Votre réveil sonnera à %d:0%d\n",hr,minr); 
+	}
+	else
+	{
+		printf("Votre réveil sonnera à %d:%d\n",hr,minr); 
+	}
+	
+	
+	           
  	
  	while(1)
  	{
@@ -52,10 +66,10 @@ int main (void)
 				case 1:
 					system("aplay SON/son1.wav");
 					break;
-				
+					
 				case 2:
 					system("aplay SON/son2.wav");
-					break;
+					break;					
 					
 				case 3:
 					system("aplay SON/son3.wav");
@@ -75,10 +89,10 @@ int main (void)
 					
 				case 7:
 					system("aplay SON/son7.wav");
-					break;
-				
+					break;				
 			}
- 			break;
+			break;
+ 			
 		}
 	}
  	
