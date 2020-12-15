@@ -32,16 +32,9 @@ Il y a deux types de réveil, un réveil classique et automatique
 Le mode réveil classique demande à l'utilisateur de choisir un son et l'heure à laquelle il souhaite qu'il sonne.
 Une fois l'heure atteinte, le son choisie se déclanchera. Pour l'arréter il suffit de faire Ctrl+C.
 
-Son disponible : 
-- 
--
--
--
--
--
--
+son disponible : 
 
-:danger
+:attention
 ```markdown
 
 ```
