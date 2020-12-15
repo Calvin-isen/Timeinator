@@ -28,6 +28,7 @@ _mettre vue du menu_
 
 ## Le Réveil
 
+
 ### - Classique
 
 
@@ -42,7 +43,6 @@ _mettre vue du menu_
 ```
 
 ## Le Chronomètre
-
 Le mode chronomètre permet de lancer un chronomètre par action clavier de l'utilisateur. 
 Il est également possible d'enregistrer au maximim 3 temps intermédiaires sur action clavier de l'utilisateur. 
 
