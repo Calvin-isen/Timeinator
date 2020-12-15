@@ -14,7 +14,7 @@ Les différents modes proposés sont les suivants :
 # Documentation 
 
 ## Les Prérequis logiciels
-Installation vlc :
+Installation vlc : :)
 ```markdown
 sudo apt install vlc
 ```
