@@ -14,7 +14,8 @@ Les différents modes proposés sont les suivants :
 # Documentation 
 
 ## Les Prérequis logiciels
-Installation vlc :
+Afin de pouvoir lire les musiques, vous devez installer VLC.
+Pour cela vous devez taper la commande suivante.
 ```markdown
 sudo apt install vlc
 ```
@@ -63,11 +64,7 @@ L'utilisateur peut ainsi programmé le temps qui souhaite instancier et peut ain
 
 Une fois que vous avez configuré vos temps de sonneries, vous pouvez choisir les types de sonneries (chansons) à mettre pour une sonnerie intermédiaire.
 
-Afin de pouvoir lire les musiques, vous devez installer VLC.
-Pour cela vous devez taper la commande suivante.
-```markdown
-sudo apt install vlc
-```
+
 
 ## Les Statistiques
 
