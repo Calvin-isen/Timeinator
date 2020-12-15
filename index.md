@@ -14,7 +14,10 @@ Les différents modes proposés sont les suivants :
 # Documentation 
 
 ## Les Prérequis logiciels
-
+Installation vlc :
+```markdown
+sudo apt install vlc
+```
 
 ## Le Menu
 Lors du lancement du programme, le menu s'affichera et vous permettra d'utiliser les différents modes proposés ci-dessus qui se lanceront sur des terminaux distincts.
