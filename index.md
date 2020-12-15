@@ -14,7 +14,7 @@ Les différents modes proposés sont les suivants :
 # Documentation 
 
 ## Les Prérequis logiciels
-Installation vlc : 
+Installation vlc :
 ```markdown
 sudo apt install vlc
 ```
@@ -27,25 +27,22 @@ _mettre vue du menu_
 ```
 
 ## Le Réveil
-Il y a deux types de réveil, un réveil classique et automatique
+
 ### - Classique
-Le mode réveil classique demande à l'utilisateur de choisir un son et l'heure à laquelle il souhaite qu'il sonne.
-Une fois l'heure atteinte, le son choisie se déclanchera. Pour l'arréter il suffit de faire Ctrl+C.
 
-son disponible : 
 
-:attention
 ```markdown
 
 ```
 
-### - Automatique
+### - Automatisé
 
 ```markdown
 
 ```
 
 ## Le Chronomètre
+
 Le mode chronomètre permet de lancer un chronomètre par action clavier de l'utilisateur. 
 Il est également possible d'enregistrer au maximim 3 temps intermédiaires sur action clavier de l'utilisateur. 
 
@@ -61,8 +58,15 @@ Commande à utiliser :
 
 ## Le Compte à Rebours
 
-```markdown
+Le mode compte à rebours permet de programmer un décompteur via une interface (Terminal) pour l'utilisateur.
+L'utilisateur peut ainsi programmé le temps qui souhaite instancier et peut ainsi programmé 0, 1 ou 2 temps de sonneries intermédiaires.
 
+Une fois que vous avez configuré vos temps de sonneries, vous pouvez choisir les types de sonneries (chansons) à mettre pour une sonnerie intermédiaire.
+
+Afin de pouvoir lire les musiques, vous devez installer VLC.
+Pour cela vous devez taper la commande suivante.
+```markdown
+sudo apt install vlc
 ```
 
 ## Les Statistiques
