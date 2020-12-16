@@ -23,18 +23,16 @@ int main()
 	int choix;
 	pid_t pid[NBMAXPROC];
 	int status = -1;
-	char CMD[15];
-	char spid[10];
 	int stats=0;
 	stat tmpsExec[NBMAXPROC];
 	
 	char tempo[50];
 
 	//Création/ouverture d'un pipe.
-		int desc,nb;
+		int desc;
 		char statsBuf[255];
 		unlink(" pipe ");
-		mkfifo("pipe" ,7777);
+		//mkfifo("pipe" ,7777);
 		//desc=open("pipe",O_WRONLY);
 	//fin création/ouverture pipe
 	
@@ -52,6 +50,7 @@ int main()
 		sleep(1); 
 
 		while(exec){//boucle principal;
+			system("clear");
 			printf("compteur pid=%d\n", cptPid);
 			//Liste des choix possible
 			printf("1) Reveil\n");
@@ -135,7 +134,6 @@ int main()
 				}
 				desc=open("pipe",O_WRONLY);
 				write(desc, statsBuf,255);
-				printf("Hello %s\n", statsBuf);
 				close(desc);
 			}
 		}
