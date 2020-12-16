@@ -15,16 +15,27 @@ Les différents modes proposés sont les suivants :
 
 ## Les Prérequis logiciels
 Afin de pouvoir lire les musiques, vous devez installer VLC.
-Pour cela vous devez taper la commande suivante.
+Pour cela vous devez taper la commande suivante:
 ```markdown
 sudo apt install vlc
+```
+Pour utiliser le mode monitoring, il est nécessaire d'installer htop sur sa machine.
+Pour cela vous devez taper la commande suivante:
+```markdown
+sudo apt install htop
 ```
 
 ## Le Menu
 Lors du lancement du programme, le menu s'affichera et vous permettra d'utiliser les différents modes proposés ci-dessus qui se lanceront sur des terminaux distincts.
 
 ```markdown
-_mettre vue du menu_
+1) Reveil
+2) Reveil automatisé
+3) Chrono
+4) Statistique
+5) Monitoring
+6) Compte à rebours
+7) Eteindre Timeinator
 ```
 
 ## Le Réveil
@@ -74,8 +85,8 @@ Le mode statistique permet de voir les différentes application lancé depuis le
 
 ## Monitoring
 
-```markdown
+Le mode monitoring permet à l'utilisateur de visualiser tous les processus en cours sur la machine et en temps réel.
+Il peut également filtrer les éléments à afficher à travers le terminal htop suivant ses désirs.
 
-```
 
 
