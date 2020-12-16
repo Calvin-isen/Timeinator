@@ -9,13 +9,6 @@
 
 
 
-void interrupt(int sig)//Gestion de l'interruption
-{
-	system("clear");
-	printf("Arrêt du réveil ...\n");
-	
-}
-
 int main (void)
 {
 	int h, min;
