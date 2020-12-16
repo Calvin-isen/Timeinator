@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-Le programme a été exécuté 31s.
-=======
-Le programme a été exécuté 17s.
->>>>>>> stats
+Le programme a été exécuté 11s.

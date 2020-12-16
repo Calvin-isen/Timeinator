@@ -56,8 +56,9 @@ int main()
 			//Liste des choix possible
 			printf("1) Reveil\n");
 			printf("2) Chrono\n");
-			printf("3) Eteindre Timeinator\n");
-			printf("4) Eteindre Timeinator\n");
+			printf("3) Statistique\n");
+			printf("4) Monitoring\n");
+			printf("5) Eteindre Timeinator\n");
 
 			scanf("%d", &choix);
 			printf("\n");
@@ -89,7 +90,7 @@ int main()
 				}
 				break;
 
-				case 3 : //chrono
+				case 3 : //statistiques
 					stats=1;
 					cptPid+=1;	
 					pid[cptPid]=fork();
@@ -103,8 +104,20 @@ int main()
 				}
 				break;
 
+				case 4 : //monitoring
+					cptPid+=1;	
+					pid[cptPid]=fork();
+					sprintf(tmpsExec[cptPid].nom, "Monitoring");
+					tmpsExec[cptPid].temps=time(NULL);
+					if(pid[cptPid] == 0) { 
+						printf("Lancement du monitoring\n");
+						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/martin/Documents/Timeinator/monitoring", NULL);
+						printf("%d\n", cptPid);
+						
+				}
+				break;
 
-				case 4 ://Fermeture du programme
+				case 5 ://Fermeture du programme
 					exec=0;
 					break;
 
