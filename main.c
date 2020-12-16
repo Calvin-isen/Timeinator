@@ -54,11 +54,12 @@ int main()
 			printf("compteur pid=%d\n", cptPid);
 			//Liste des choix possible
 			printf("1) Reveil\n");
-			printf("2) Chrono\n");
-			printf("3) Statistique\n");
-			printf("4) Monitoring\n");
-			printf("5) Compte à rebours\n");
-			printf("6) Eteindre Timeinator\n");
+			printf("2) Reveil automatisé\n");
+			printf("3) Chrono\n");
+			printf("4) Statistique\n");
+			printf("5) Monitoring\n");
+			printf("6) Compte à rebours\n");
+			printf("7) Eteindre Timeinator\n");
 
 			scanf("%d", &choix);
 			printf("\n");
@@ -77,7 +78,21 @@ int main()
 					}
 					break;
 
-				case 2 : //chrono
+				case 2 : //reveil auto
+					cptPid+=1;	
+					pid[cptPid]=fork();
+					sprintf(tmpsExec[cptPid].nom, "Réveil automatisé");
+					tmpsExec[cptPid].temps=time(NULL);
+					if(pid[cptPid] == 0) { 
+						printf("Lancement du réveil automatisé\n");
+						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/martin/Documents/Timeinator/reveil2", NULL);
+						printf("%d\n", cptPid);
+						
+				}
+				break;
+
+
+				case 3 : //chrono
 					cptPid+=1;	
 					pid[cptPid]=fork();
 					sprintf(tmpsExec[cptPid].nom, "Chrono");
@@ -90,7 +105,7 @@ int main()
 				}
 				break;
 
-				case 3 : //statistiques
+				case 4 : //statistiques
 					stats=1;
 					cptPid+=1;	
 					pid[cptPid]=fork();
@@ -104,7 +119,7 @@ int main()
 				}
 				break;
 
-				case 4 : //monitoring
+				case 5 : //monitoring
 					cptPid+=1;	
 					pid[cptPid]=fork();
 					sprintf(tmpsExec[cptPid].nom, "Monitoring");
@@ -117,7 +132,7 @@ int main()
 				}
 				break;
 
-				case 5 : //compte a rebours
+				case 6 : //compte a rebours
 					cptPid+=1;	
 					pid[cptPid]=fork();
 					sprintf(tmpsExec[cptPid].nom, "Compte à rebours");
@@ -130,7 +145,7 @@ int main()
 				}
 				break;
 
-				case 6 ://Fermeture du programme
+				case 7 ://Fermeture du programme
 					exec=0;
 					break;
 
