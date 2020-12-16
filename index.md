@@ -68,9 +68,10 @@ Une fois que vous avez configuré vos temps de sonneries, vous pouvez choisir le
 
 ## Les Statistiques
 
-```markdown
+Le mode statistique permet de voir les différentes application lancé depuis le début du programme et leurs temps d'exécution.
 
-```
+
+
 ## Monitoring
 
 ```markdown
