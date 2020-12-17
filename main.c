@@ -43,7 +43,7 @@ int main()
 		
 		//lancement du processus à partir d'un autre fichier
 		char *args[] = {"main", NULL, NULL};
-		execv("/home/martin/Documents/Timeinator/process_time_cpt",args);
+		execv("/home/isen/Timeinator/process_time_cpt",args);
 		
 
 	}else{ //Tache mère
@@ -72,7 +72,7 @@ int main()
 					tmpsExec[cptPid].temps=time(NULL);
 					if(pid[cptPid] == 0) { 
 						printf("Lancement du reveil\n");
-						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/martin/Documents/Timeinator/reveil", NULL);
+						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/isen/Timeinator/reveil", NULL);
 						printf("%d\n", cptPid);
 						
 					}
@@ -85,7 +85,7 @@ int main()
 					tmpsExec[cptPid].temps=time(NULL);
 					if(pid[cptPid] == 0) { 
 						printf("Lancement du réveil automatisé\n");
-						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/martin/Documents/Timeinator/reveil2", NULL);
+						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/isen/Timeinator/reveil2", NULL);
 						printf("%d\n", cptPid);
 						
 				}
@@ -99,7 +99,7 @@ int main()
 					tmpsExec[cptPid].temps=time(NULL);
 					if(pid[cptPid] == 0) { 
 						printf("Lancement du chrono\n");
-						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/martin/Documents/Timeinator/chrono", NULL);
+						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/isen/Timeinator/chrono", NULL);
 						printf("%d\n", cptPid);
 						
 				}
@@ -113,7 +113,7 @@ int main()
 					tmpsExec[cptPid].temps=time(NULL);
 					if(pid[cptPid] == 0) { 
 						printf("Lancement des stats\n");
-						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/martin/Documents/Timeinator/stats", NULL);
+						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/isen/Timeinator/stats", NULL);
 						printf("%d\n", cptPid);
 						
 				}
@@ -126,7 +126,7 @@ int main()
 					tmpsExec[cptPid].temps=time(NULL);
 					if(pid[cptPid] == 0) { 
 						printf("Lancement du monitoring\n");
-						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/martin/Documents/Timeinator/monitoring", NULL);
+						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/isen/Timeinator/monitoring", NULL);
 						printf("%d\n", cptPid);
 						
 				}
@@ -139,7 +139,7 @@ int main()
 					tmpsExec[cptPid].temps=time(NULL);
 					if(pid[cptPid] == 0) { 
 						printf("Lancement du compte à rebours\n");
-						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/martin/Documents/Timeinator/compte_a_rebours", NULL);
+						execl("/usr/bin/xterm", "xterm","-hold","-e","/home/isen/Timeinator/compte_a_rebours", NULL);
 						printf("%d\n", cptPid);
 						
 				}
