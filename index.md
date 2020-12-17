@@ -39,19 +39,16 @@ Lors du lancement du programme, le menu s'affichera et vous permettra d'utiliser
 ```
 
 ## Le Réveil
-
+Il y a deux type de réveil : un réveil classique et un réveil automatisé.
 ### - Classique
 
-
-```markdown
-
-```
+Le mode réveil permet à l’utilisateur de choisir un son et une heure.
+Une fois l’heure choisie par l’utilisateur atteinte, l’ordinateur emmétra le son choisi en boucle jusqu’à l’arrêt. Pour l’arrêter, il faut fait Ctrl+C.
 
 ### - Automatisé
 
-```markdown
-
-```
+Le réveil automatisé demande à l’utilisateur l’heure à laquelle il souhaite se lever le matin et le son du réveil et l’enregistre dans un fichier. Une fois l’heure choisie par l’utilisateur atteinte, l’ordinateur emmétra le son choisi en boucle jusqu’à l’arrêt. Pour l’arrêter, il faut fait Ctrl+C.
+Si le fichier existe déjà, le programme vous proposera de garder l’heure enregistrée ou de la modifier.
 
 ## Le Chronomètre
 
